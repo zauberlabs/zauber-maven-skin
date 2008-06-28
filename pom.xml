@@ -28,19 +28,53 @@ under the License.
   </parent>
   <groupId>ar.com.zauber.maven.skins</groupId>
   <artifactId>maven-zauber-skin</artifactId>
-  <version>1</version>
+  <version>2-SNAPSHOT</version>
   <name>Zauber Site Skin</name>
   <description>Zauber Site Skin</description>
-
+ 
+  <scm>
+     <connection>scm:svn:https://svn.zauber.com.ar/private/zauber/sandbox/maven/zauber-maven-zauber-skin/code/trunk</connection>
+     <developerConnection>scm:svn:https://svn.zauber.com.ar/private/zauber/sandbox/maven/zauber-maven-zauber-skin/code/trunk</developerConnection>
+     <url>https://svn.zauber.com.ar/private/zauber/sandbox/maven/zauber-maven-zauber-skin/code/trunk</url>
+  </scm>
+  <repositories>
+    <repository>
+      <id>zauber-code-repo</id>
+      <name>Zauber Code Repo</name>
+      <url>https://code.zauber.com.ar/repos/m2</url>
+      <releases><enabled>true</enabled></releases>
+      <snapshots><enabled>false</enabled></snapshots>
+     </repository>
+  </repositories>
   <distributionManagement>
     <repository>
-       <id>zauber-private-repo</id>
-	   <name>private zauber repository</name>
-	   <url>sftp://intra.zauber.com.ar/home/zauber/infra/www/repo1/default/</url>
-	   <layout>default</layout>
+      <id>zauber-internal-releases</id>
+      <name>Zauber Internal Releases</name>
+      <url>https://repo1.zauber.com.ar/zauber/internal/releases</url>
     </repository>
+    <snapshotRepository>
+      <id>zauber-internal-snapshots</id>
+      <name>Zauber Internal Snapshots</name>
+      <url>https://repo1.zauber.com.ar/zauber/internal/snapshots</url>
+    </snapshotRepository>
   </distributionManagement>
 
+   <build>
+    <plugins>
+     <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <executions>
+           <execution>
+             <phase>package</phase>
+             <goals>
+                <goal>jar</goal>
+             </goals>
+           </execution>
+        </executions>
+     </plugin>
+    </plugins>
+   </build>
 
 </project>
 
