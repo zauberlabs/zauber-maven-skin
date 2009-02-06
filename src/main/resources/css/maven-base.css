@@ -27,8 +27,17 @@ div.clear hr{
   display: none;
 }
 #bannerLeft, #bannerRight {
-  font-size: xx-large;
+  font-size: 1.6em;
   font-weight: bold;
+  float:left;
+}
+#bannerLeft{
+  padding-left:30px;
+  padding-top:35px;
+  text-align:right;}
+#bannerLeft span{
+  font-size:0.6em;
+  font-weight:normal;
 }
 #bannerLeft img, #bannerRight img {
   margin: 0px;

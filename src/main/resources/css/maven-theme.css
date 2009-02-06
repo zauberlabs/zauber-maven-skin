@@ -18,7 +18,7 @@
  */
 
 body {
-  background-color: #fff;
+  background-color: #eeeeee;
   font-family: Verdana, Helvetica, Arial, sans-serif;
   margin-left: auto;
   margin-right: auto;
@@ -38,7 +38,7 @@ a {
   text-decoration: none;
 }
 a:link {
-  color:#47a;
+  color:#FE0000;
 }
 a:visited  {
   color:#666666;
@@ -46,6 +46,14 @@ a:visited  {
 a:active, a:hover {
   color:#990000;
 }
+
+#container{
+  width:940px;
+  background:url(../images/body-bg.png) repeat-y left top;
+  padding: 0 20px;
+  margin:0 auto;
+}
+
 #legend li.externalLink {
   background: url(../images/external.png) left top no-repeat;
   padding-left: 18px;
@@ -64,54 +72,47 @@ a.newWindow, a.newWindow:link, a.newWindow:visited, a.newWindow:active, a.newWin
 }
 h2 {
   font-size: 17px;
-  color: #333333;  
+  font-weight:normal;
+  color: #FE0000;  
 }
 h3 {
-  padding: 4px 4px 4px 24px;
-  color: #666;
-  background-color: #ccc;
-  font-weight: bold;
-  font-size: 14px;
-  background-image: url(../images/h3.jpg);
-  background-repeat: no-repeat;
-  background-position: left bottom;
+  padding: 4px 4px 0 0;
+  margin-bottom:0;
+  color: #FE0000;
+  font-weight: normal;
+  font-size: 1.3em;
 }
 p {
-  line-height: 1.3em;
+  line-height: 1.5em;
   font-size: 12px;
-  color: #000;
+  color: #666666;
 }
 #breadcrumbs {
-  height: 13px;
-  background-image: url(../images/breadcrumbs.jpg);
-  padding: 5px 10px 14px 20px;
+  background-color:#EEEEEE;
+  color:#888888;
+  height:13px;
+  padding:8px 10px 8px 20px;
+  margin:20px 0;
 }
 * html #breadcrumbs {
   padding-bottom: 8px;
 }
 #leftColumn {
+  background-color:#333333;
   margin: 10px 0 10px 0;
-  border-top-color: #ccc;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-right-color: #ccc;
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-bottom-color: #ccc;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
   padding-right: 5px;
   padding-left: 5px;
+  border-color:#222222 #262626 #222222 #222222 ;
+  border-style:solid;
+  border-width:1px 3px 1px 1px ;
 }
 #navcolumn h5 {
-  font-size: smaller;
-  border-bottom: 1px solid #aaaaaa;
-  padding-top: 2px;
-  padding-left: 9px;
-  color: #49635a;
-  background-image: url(../images/h5.jpg);
-  background-repeat: no-repeat;
-  background-position: left bottom;
+  font-family:'Trebuchet MS',Trebuchet,Arial,Verdana,Sans-serif;
+  font-size:1em;
+  letter-spacing:0.2em;
+  color: #FE0000;
+  letter-spacing:1px;
+  text-transform:uppercase;
 }
 
 table.bodyTable th {
@@ -157,6 +158,12 @@ dt {
 table {
   font-size: 10px;
 }
+#footer .xright{
+  float:none;
+  color:#AAAAAA;
+  text-transform:uppercase;
+  text-align:center;
+}
 .xright a:link, .xright a:visited, .xright a:active {
   color: #666;
 }
@@ -164,14 +171,26 @@ table {
   color: #003300;
 }
 #banner {
-  height: 93px;
-  background: url(../images/banner.jpg);
+  height: 140px;
+  background: url(../images/header-hr.png) no-repeat center bottom;
+}
+#banner img{
+  margin-right:30px;
+}
+#navcolumn,
+#navcolumn li {
+  color:#888888;
 }
 #navcolumn ul {
-  margin: 5px 0 15px -0em;
+  margin: 5px 0 45px -0em;
+}
+#navcolumn li{
+  line-height:1.5em;
+  padding:0.25em 0;
+  border-bottom:1px solid #393939;
 }
 #navcolumn ul a {
-  color: #333333;
+  color: #888888;
 }
 #navcolumn ul a:hover {
   color: red;
@@ -190,8 +209,8 @@ table {
   font-size: 12px;
 }
 #footer {
-  padding: 10px;
-  margin: 20px 0px 20px 0px;
+  margin:20px 0 0;
+  padding:10px 10px 30px;
   border-top: solid #ccc 1px; 
   color: #333333;
 }

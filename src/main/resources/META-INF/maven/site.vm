@@ -344,6 +344,7 @@
     #end
   </head>
   <body class="composite">
+  	<div id="container">
     <div id="banner">
       #banner( $decoration.bannerLeft "bannerLeft" )
       #banner( $decoration.bannerRight "bannerRight" )
@@ -358,6 +359,7 @@
         <hr/>
       </div>
     </div>
+	<div id="mainContent">
     <div id="leftColumn">
       <div id="navcolumn">
        #publishDate( "navigation-top" $decoration.publishDate $decoration.version )
@@ -371,6 +373,7 @@
         $bodyContent
       </div>
     </div>
+	</div> <!-- /#mainContent -->
     <div class="clear">
       <hr/>
     </div>
@@ -380,5 +383,6 @@
         <hr/>
       </div>
     </div>
+	</div> <!-- /#container -->
   </body>
 </html>
