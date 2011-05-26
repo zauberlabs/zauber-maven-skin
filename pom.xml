@@ -28,7 +28,7 @@ under the License.
    </parent>
   <groupId>com.zaubersoftware.maven.skins</groupId>
   <artifactId>maven-zauber-skin</artifactId>
-  <version>3-SNAPSHOT</version>
+  <version>3</version>
   <name>Zauber Site Skin</name>
   <description>Zauber Site Skin for all open source projects</description>
   <url>http://code.zaubersoftware.com</url>
